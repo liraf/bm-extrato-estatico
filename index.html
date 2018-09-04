@@ -57,7 +57,7 @@
               <option value="3">SQN 216 Bloco A Ap. 112</option>
             </select>
           </div>
-          <div class="extrato__info">
+          <div class="extrato__info animated wow fadeInLeft">
             <p class="extrato__infotitle">Credor</p>
             <p class="extrato__infocontent">Robson Silveira Andrade</p>
             <p class="extrato__infotitle">Imóvel</p>
@@ -66,6 +66,10 @@
             <p class="extrato__infocontent">Luciana Campos Oliveira</p>
             <p class="extrato__infotitle">Vigência do contrato</p>
             <p class="extrato__infocontent">26/11/2016 A 25/11/2019</p>
+            <div class="extrato__progress">
+              <!-- no atributo style vai o tamanho da barra de progresso -->
+              <div class="extrato__progressbar" style="width: 50%;"></div>
+            </div>
             <div class="extrato__infomonths">
               <p class="extrato__infomonthsnumber"><span>22</span> meses restantes</p>
               <p class="extrato__infomonthstext"><span>R$59.400</span> a receber</p>
@@ -85,7 +89,7 @@
               <option value="3">01 Jul 2018 - 20 Jul 2018</option>
             </select>
           </div>
-          <div class="extrato__info">
+          <div class="extrato__info animated wow fadeInLeft">
             <h2 class="extrato__periodtitle">R$2.520,00</h2>
             <p class="extrato__perioddescription">Saldo total líquido </p>
             <div class="extrato__periodtable">
@@ -112,7 +116,7 @@
       <div class="row">
         <div class="col l8 offset-l2 m12 s12">
           <h2 class="timeline__title">Histórico de lançamentos</h2>
-          <div class="timeline__block">
+          <div class="timeline__block animated wow fadeInLeft" data-wow-delay="0.1s">
             <div class="timeline__status">
               <img src="static/img/minus.svg" class="timeline__statusicon" alt="">
               <div class="timeline__bar"></div>
@@ -125,7 +129,7 @@
               <p class="timeline__valuevalue">R$ 60,90</p>
             </div>
           </div>
-          <div class="timeline__block">
+          <div class="timeline__block animated wow fadeInLeft" data-wow-delay="0.2s">
             <div class="timeline__status">
               <img src="static/img/plus.svg" class="timeline__statusicon" alt="">
               <div class="timeline__bar"></div>
@@ -138,7 +142,7 @@
               <p class="timeline__valuevalue">R$ 2700</p>
             </div>
           </div>
-          <div class="timeline__block">
+          <div class="timeline__block animated wow fadeInLeft" data-wow-delay="0.3s">
             <div class="timeline__status">
               <img src="static/img/minus.svg" class="timeline__statusicon" alt="">
               <div class="timeline__bar"></div>
@@ -151,7 +155,7 @@
               <p class="timeline__valuevalue">R$ 105</p>
             </div>
           </div>
-          <div class="timeline__block">
+          <div class="timeline__block animated wow fadeInLeft" data-wow-delay="0.4s">
             <div class="timeline__status">
               <img src="static/img/plus.svg" class="timeline__statusicon" alt="">
               <div class="timeline__bar"></div>
@@ -164,7 +168,7 @@
               <p class="timeline__valuevalue">R$ 3200</p>
             </div>
           </div>
-          <div class="timeline__block">
+          <div class="timeline__block animated wow fadeInLeft" data-wow-delay="0.5s">
             <div class="timeline__status">
               <img src="static/img/minus.svg" class="timeline__statusicon" alt="">
               <div class="timeline__bar"></div>
@@ -208,6 +212,10 @@
   </script>
   <script src="static/js/jquery.mask.js"></script>
 
+  <script>
+      var containerEl = document.querySelector('.cards-container');
+      var mixer = mixitup(containerEl);
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
