@@ -29,7 +29,7 @@ h1, h2, h3, h4{
 
 
 body{
-  background-color: #E5E5E5;
+  background-color: #f4f6f8;
 }
 
 
@@ -121,6 +121,16 @@ body{
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 20px;
+}
+.extrato__select li{
+  background: rgba(160, 221, 255, 0.4);
+  border: 1px solid rgba(143, 188, 255, 0.5);
+  box-sizing: border-box;
+  padding-left: 20px;
+  color: #10162E;
+}
+.extrato__select li span{
+  color: #10162E;
 }
 .extrato__info{
   background: #FFFFFF;
@@ -224,6 +234,13 @@ body{
   font-size: 14px;
   color: #373F51;
   font-weight: bold;
+  width: 100px;
+}
+.extrato__periodtableright img{
+  width: 22px;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 5px;
 }
 .extrato__periodtableleft{
   line-height: 18px;
