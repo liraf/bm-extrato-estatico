@@ -154,6 +154,11 @@ body{
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.03);
   border-radius: 4px;
   padding: 16px 16px;
+  display: none;
+}
+
+.extrato__info.extrato__active{
+  display: block;
 }
 .extrato__infotitle{
   font-size: 14px;
