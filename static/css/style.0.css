@@ -1,0 +1,339 @@
+
+body{
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Nunito', sans-serif;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+
+body{
+  background-color: #E5E5E5;
+}
+
+
+/* HEADER SECTION */
+#header-section nav{
+  background: linear-gradient(180deg, #2A64E6 0%, #4B82FF 100%), #4672D4;
+  background-color: #2A64E6;
+  box-shadow: none;
+}
+#header-section nav .nav-wrapper ul li a{
+  color: #000000;
+}
+#header-section nav .nav-wrapper ul li a.btn{
+  background-color: #ffff;
+  color: #000000;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  text-transform: none;
+}
+#header-section nav .brand-logo{
+  padding-left: 25px;
+  padding-top: 12px;
+}
+@media only screen and (min-width: 993px) and (max-width: 1199px){
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 992px){
+  nav{
+      height: 90px;
+      line-height: 90px;
+  }
+  #header-section nav .brand-logo {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  #header-section nav .brand-logo img{
+    width: 160px;
+  }
+
+}
+@media (max-width: 991px) {
+  nav a {
+    color: #ffffff;
+  }
+  nav .sidenav-trigger i {
+    height: 58px;
+    line-height: 58px;
+  }
+  nav .sidenav-trigger {
+    float: left;
+    position: relative;
+    z-index: 1;
+    height: 58px;
+    margin: 0px;
+  }
+  #header-section nav .brand-logo {
+    padding-left: 0px;
+  }
+  #logo-container img{
+    width: 54px;
+  }
+}
+/* END HEADER SECTION */
+
+
+/* EXTRATO */
+.extrato__title{
+  font-size: 25px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000000;
+  opacity: 0.9;
+  font-weight: bold;
+}
+.extrato__desc{
+  line-height: 20px;
+  font-size: 14px;
+  color: #373F51;
+  opacity: 0.75;
+  text-align: center;
+  margin: 0;
+}
+.extrato__select .select-wrapper input.select-dropdown{
+  background: rgba(160, 221, 255, 0.4);
+  border: 1px solid rgba(143, 188, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 20px;
+}
+.extrato__info{
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  padding: 16px 16px;
+}
+.extrato__infotitle{
+  font-size: 14px;
+  color: #373F51;
+  opacity: 0.75;
+  margin: 0;
+  margin-top: 32px;
+}
+.extrato__infotitle:first-child {
+  margin-top: 0px;
+}
+.extrato__infocontent{
+  font-size: 16px;
+  color: #000000;
+  opacity: 0.9;
+  font-weight: bold;
+  margin: 0;
+}
+.extrato__infomonths{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+.extrato__infomonthsnumber{
+  line-height: normal;
+  font-size: 15px;
+  color: #373F51;
+  margin: 0;
+}
+.extrato__infomonthsnumber span{
+  font-weight: bold;
+}
+.extrato__infomonthstext{
+  font-size: 13px;
+  color: #373F51;
+  opacity: 0.75;
+  margin: 0;
+}
+.extrato__infomonthstext span{
+  font-weight: bold;
+  color: #000000;
+
+}
+.extrato__infonextpayment{
+  display: inline-block;
+  width: 35%;
+  vertical-align: top;
+  margin-top: 30px;
+  float: right;
+}
+.extrato__infonextpaymenttext{
+  font-size: 12px;
+  text-align: center;
+  color: #373F51;
+  opacity: 0.75;
+  margin: 0;
+}
+.extrato__infonextpaymentdate{
+  font-size: 15px;
+  color: #373F51;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.extrato__periodtitle{
+  font-size: 24px;
+  font-weight: bold;
+  color: #316AEC;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+.extrato__perioddescription{
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  margin-top: 9px;
+}
+.extrato__periodtable{
+  margin-top: 13px;
+}
+.extrato__periodtable:first-child{
+  margin-top: 34px;
+}
+.extrato__periodtable:last-child{
+  margin-bottom: 20px;
+}
+.extrato__periodtableright{
+  float: right;
+  font-size: 14px;
+  color: #373F51;
+  font-weight: bold;
+}
+.extrato__periodtableleft{
+  line-height: 18px;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.75;
+}
+/* END EXTRATO */
+
+
+/* TIMELINE */
+.timeline__title{
+  font-size: 25px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000000;
+  opacity: 0.9;
+  font-weight: bold;
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+.timeline__block{
+  margin-bottom: 20px;
+}
+.timeline__status{
+  display: inline-block;
+  vertical-align: top;
+}
+.timeline__statusicon{
+  width: 17px;
+}
+.timeline__bar{
+  width: 2px;
+  height: 35px;
+  background: #b8b5b5;
+  border-radius: 2px;
+  display: block;
+  margin: auto;
+  margin-top: 4px;
+}
+.timeline__description{
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+  padding-left: 15px;
+}
+.timeline__descriptiontitle{
+  line-height: 16px;
+  font-size: 15px;
+  margin: 0;
+  color: #000000;
+  opacity: 0.75;
+  font-weight: bold;
+
+}
+.timeline__descriptiondate{
+  line-height: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #9A9A9A;
+  margin: 0px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.timeline__value{
+  display: inline-block;
+  vertical-align: top;
+}
+.timeline__valuevalue{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: #373F51;
+}
+/* END TIMELINE */
+
+/* BOTTOM CTA */
+.bottomcta{
+  background: #59CD90;
+  display: block;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+
+}
+.bottomcta__title{
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 0;
+  display: inline-block;
+}
+.bottomcta__arrow{
+  color: #ffffff;
+  opacity: 0.7;
+  line-height: 30px;
+  float: right;
+}
+/* END BOTTOM CTA */
+
+
+/* TABLET DEVICES */
+@media (min-width: 600px) {
+}
+/* DESKTOP DEVICES */
+@media (min-width: 991px) {
+}
+/* LARGE DESKTOP DEVICES */
+@media (min-width: 1199px) {
+
+}
