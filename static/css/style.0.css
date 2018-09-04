@@ -43,16 +43,19 @@ body{
   color: #000000;
 }
 #header-section nav .nav-wrapper ul li a.btn{
-  background-color: #ffff;
-  color: #000000;
+  background-color: #2A64E6;
+  color: #ffffff;
   box-shadow: none;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 4px;
   text-transform: none;
 }
 #header-section nav .brand-logo{
   padding-left: 25px;
   padding-top: 12px;
+}
+#header-section nav .brand-logo img{
+  max-width: 108px;
 }
 @media only screen and (min-width: 993px) and (max-width: 1199px){
   .container {
@@ -69,9 +72,12 @@ body{
     padding-top: 10px;
   }
   #header-section nav .brand-logo img{
-    width: 160px;
+    width: 108px;
   }
-
+  #header-section nav{
+    background: #2A64E6;
+    box-shadow: none;
+  }
 }
 @media (max-width: 991px) {
   nav a {
@@ -107,6 +113,8 @@ body{
   opacity: 0.9;
   font-weight: bold;
 }
+
+
 .extrato__desc{
   line-height: 20px;
   font-size: 14px;
@@ -122,9 +130,16 @@ body{
   border-radius: 4px;
   padding-left: 20px;
 }
-.extrato__select li{
+.select-dropdown.dropdown-content li.selected{
   background: rgba(160, 221, 255, 0.4);
   border: 1px solid rgba(143, 188, 255, 0.5);
+  box-sizing: border-box;
+  padding-left: 20px;
+  color: #10162E;
+
+
+}
+.extrato__select li{
   box-sizing: border-box;
   padding-left: 20px;
   color: #10162E;
@@ -248,6 +263,11 @@ body{
   color: #000000;
   opacity: 0.75;
 }
+@media (min-width: 992px) {
+  .extrato__title--alone{
+    margin: 41px 0px;
+  }
+}
 /* END EXTRATO */
 
 
@@ -308,6 +328,8 @@ body{
 .timeline__value{
   display: inline-block;
   vertical-align: top;
+  float: right;
+
 }
 .timeline__valuevalue{
   font-size: 14px;
@@ -340,6 +362,12 @@ body{
   opacity: 0.7;
   line-height: 30px;
   float: right;
+}
+@media (min-width: 992px) {
+  .bottomcta{
+    width: 290px;
+
+  }
 }
 /* END BOTTOM CTA */
 
